@@ -1,12 +1,13 @@
 <?php
 
-/*********************************
-CSS REMOVE UNUSED RULES
-Only in AMP pages
-Author: Marcel Soler
-e-mail: msoler75@yahoo.es
-Version: 1.0 (2016)
-*********************************/
+/***************************************************************
+* CSS REMOVE UNUSED RULES
+* Only in AMP pages
+* Author: Marcel Soler
+* e-mail: msoler75@yahoo.es
+* Version: 1.0 (2016)
+* Project:  https://github.com/msoler75/amp-remove-unused-css
+**************************************************************/
 
 //HOW TO USE:
 //call the main function: 
@@ -77,7 +78,6 @@ function amp_remove_css_callback($matches)
 
 function amp_css_find_rules_callback($matches)
 {
-	global $include_selectors;
 	global $include_selectors;
 	global $rules_to_remove;		
 	global $htmlbodyamp;
