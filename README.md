@@ -16,6 +16,7 @@ https://www.ampproject.org/
 
 
 HOW TO USE THE LIB
+------------------
 
 Just call the main function with the full html code of the AMP page as parameter.
 
