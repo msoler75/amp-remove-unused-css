@@ -3,8 +3,8 @@
 /***************************************************************
 * CSS REMOVE UNUSED RULES
 * Only in AMP pages
-* Author: Marcel Soler
-* e-mail: msoler75@yahoo.es
+* Author: Pigmalión Tseyor
+* e-mail: pigmalion@tseyor.org
 * Version: 1.0 (2016)
 * Project:  https://github.com/msoler75/amp-remove-unused-css
 **************************************************************/
