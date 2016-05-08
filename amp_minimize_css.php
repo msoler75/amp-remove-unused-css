@@ -1,7 +1,16 @@
 <?php
 
-//CSS REMOVE UNUSED RULES
-//useful in AMP pages
+/*********************************
+CSS REMOVE UNUSED RULES
+Only in AMP pages
+Author: Marcel Soler
+e-mail: msoler75@yahoo.es
+Version: 1.0 (2016)
+*********************************/
+
+//HOW TO USE:
+//call the main function: 
+//amp_remove_inline_unused_css($fullhtml)
 
 //TO-DO : process @media
 
@@ -13,7 +22,6 @@ global $htmlbodyamp;
 $include_selectors = array('div','span','a','p','body','ul','li','nav');
 $rules_to_remove = array();
 
-//MAIN FUNCTION: amp_remove_inline_unused_css($fullhtml)
 
 
 function amp_remove_css_callback($matches)
