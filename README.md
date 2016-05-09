@@ -11,7 +11,7 @@ It also can really be useful if the template contains a lot of CSS.
 
 Maybe in the future Google will mind the size of AMP pages and classify the smaller ones in a better position.
 
-More information: 
+More information about AMP: 
 https://www.ampproject.org/
 
 
@@ -22,3 +22,32 @@ Just call the main function with the full html code of the AMP page as parameter
 
 amp_remove_inline_unused_css($fullhtml);
 
+
+
+CLASS VERSION
+-------------
+
+amp_remove_css.class.php
+
+HOW TO USE - BASIC:
+
+	$tmp = new AmpRemoveUnusedCss();
+	$stats = $tmp->process($htmlcode);  //must be full htmlcode, with <style amp-custom> tag and the <body> content
+	$result = $tmp->result();		
+	
+
+HOW TO VIEW REPORT:
+
+	$tmp = new AmpRemoveUnusedCss(1);  //set 1 or TRUE to get full report, or void or 0 or FALSE to get simple report
+	$stats = $tmp->process($htmlcode);  
+	echo $tmp->report(); 
+	
+
+ONLY MINIFY CSS (can be used in no-AMP pages, too)
+
+	You also can just only minify CSS by calling (it removes useless white spaces, but it does not remove unused CSS rules):
+
+	$tmp = new AmpRemoveUnusedCss();
+	$css_minified = $tmp->minify($css);	
+	
+	
