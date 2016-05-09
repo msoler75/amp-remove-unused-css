@@ -1,13 +1,21 @@
 
 I am providing these functions to eliminate unnecessary rules within the CSS code pages AMP (Accelerated Mobile Pages) format.
 
-In this format each page contain inline the whole CSS styles that will need.
+In this format each single page contain inline the whole CSS styles that will need.
 
-These funcions will not significantly reduce the final download size once compressed, but will add clarity in code and will reduce the processor time, that it's useful in mobile devices.
+Ok, all CSS in AMP is embeded inline, but some people still use templates styles with a tons of CSS code, and most of pages can add large extra useless CSS code.
 
-It also can really be useful if the template contains a lot of CSS.
+It's time to reduce useless CSS and remove all those CSS rules not in use, leaving usually a few lines in each single page.
+
+¡Now we don't need to worry about big CSS templates that are being translated to AMP protocol!
+
+These funcions will not significantly reduce the final download size once compressed, but will add clarity in code and will reduce the processor time, that it's useful in handheld devices.
 
 Maybe in the future Google will mind the size of AMP pages and classify the smaller ones in a better position.
+
+I tried some approaches to get the fastest algorithm, and now it's really fast. But I recommend to cache pages as usual.
+
+
 
 More information about AMP: 
 https://www.ampproject.org/
@@ -16,16 +24,8 @@ https://www.ampproject.org/
 HOW TO USE THE LIB
 ------------------
 
-Just call the main function with the full html code of the AMP page as parameter.
+First include the file  amp_remove_css.class.php
 
-amp_remove_inline_unused_css($fullhtml);
-
-
-
-CLASS VERSION
--------------
-
-amp_remove_css.class.php
 
 HOW TO USE - BASIC:
 
