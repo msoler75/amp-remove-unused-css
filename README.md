@@ -31,14 +31,14 @@ First include the file  amp_remove_css.class.php
 HOW TO USE - BASIC:
 
 	$tmp = new AmpRemoveUnusedCss();
-	$stats = $tmp->process($htmlcode);  //must be full htmlcode, with <style amp-custom> tag and the <body> content
-	$result = $tmp->result();		
+	$tmp->process($htmlcode);  //must be full htmlcode, with <style amp-custom> tag and the <body> content
+	echo $tmp->result();		
 	
 
 HOW TO VIEW REPORT:
 
 	$tmp = new AmpRemoveUnusedCss(1);  //set 1 or TRUE to get full report, or void or 0 or FALSE to get simple report
-	$stats = $tmp->process($htmlcode);  
+	$tmp->process($htmlcode);  
 	echo $tmp->report(); 
 	
 
