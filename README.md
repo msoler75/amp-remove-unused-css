@@ -1,6 +1,4 @@
 
-"# amp-remove-unused-css"
-
 I am providing these functions to eliminate unnecessary rules within the CSS code pages AMP (Accelerated Mobile Pages) format.
 
 In this format each page contain inline the whole CSS styles that will need.
@@ -49,5 +47,4 @@ ONLY MINIFY CSS (can be used in no-AMP pages, too)
 
 	$tmp = new AmpRemoveUnusedCss();
 	$css_minified = $tmp->minify($css);	
-	
 	
