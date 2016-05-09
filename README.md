@@ -21,8 +21,8 @@ More information about AMP:
 https://www.ampproject.org/
 
 
-HOW TO USE THE LIB
-------------------
+HOW TO USE THE CLASS
+--------------------
 
 First include the file  amp_remove_css.class.php
 
