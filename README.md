@@ -1,5 +1,5 @@
 
-THis Class can be used to take away those unnecessary rules within the CSS code pages AMP (Accelerated Mobile Pages) format.
+This class can be used to take away those unnecessary rules within the CSS code pages AMP (Accelerated Mobile Pages) format.
 
 In this format each single page contain inline the whole CSS styles that will need.
 
