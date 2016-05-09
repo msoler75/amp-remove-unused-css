@@ -7,7 +7,7 @@ Ok, all CSS in AMP is embeded inline, but some people still use templates styles
 
 It's time to reduce useless CSS and remove all those CSS rules not being used, leaving usually a few lines in each single page.
 
-¡Now we don't need to worry about big CSS templates that are being translated to AMP protocol!
+¡Now we don't need to worry about big CSS templates that are being translated to AMP HTML!
 
 These funcions will not significantly reduce the final download size once compressed, but will add clarity in code and will reduce the processor time, that it's useful in handheld devices.
 
