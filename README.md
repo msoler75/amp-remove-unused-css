@@ -1,11 +1,11 @@
 
-I am providing these functions to eliminate unnecessary rules within the CSS code pages AMP (Accelerated Mobile Pages) format.
+THis Class can be used to take away those unnecessary rules within the CSS code pages AMP (Accelerated Mobile Pages) format.
 
 In this format each single page contain inline the whole CSS styles that will need.
 
 Ok, all CSS in AMP is embeded inline, but some people still use templates styles with a tons of CSS code, and most of pages can add large extra useless CSS code.
 
-It's time to reduce useless CSS and remove all those CSS rules not in use, leaving usually a few lines in each single page.
+It's time to reduce useless CSS and remove all those CSS rules not being used, leaving usually a few lines in each single page.
 
 ¡Now we don't need to worry about big CSS templates that are being translated to AMP protocol!
 
@@ -19,6 +19,7 @@ I tried some approaches to get the fastest algorithm, and now it's really fast. 
 
 More information about AMP: 
 https://www.ampproject.org/
+
 
 
 HOW TO USE THE CLASS
