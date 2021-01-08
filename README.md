@@ -8,9 +8,9 @@ More information about AMP:
 https://www.ampproject.org/
 
 
-The operation is simple: it is enough to process the final document in AMP format, including the <style amp-custom> tag and the <body>.
+The operation is simple: it is enough to process the final document in AMP format, including the `<style amp-custom>` tag and the `body` tag.
 
-Version 2.0 have been completely rebuilt, and now supports @media rules, which tolerates and optimizes them, removing them completely when they are no longer needed.
+Version 2.0 have been completely rebuilt, and now supports @media rules, removing them completely when they are no longer needed.
 
 It also respects the @keyframes leaving them unchanged.
 
