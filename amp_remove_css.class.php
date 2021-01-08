@@ -25,18 +25,18 @@ If you want to preserve some CSS rules, you can also tell the library to keep th
 HOW TO USE - BASIC:
     $tmp = new AmpRemoveUnusedCss();
     $tmp->preserve_selectors[] = ".please-dont-delete-me"; // preserve this css rule anywhere it appears
-	$tmp->process($htmlcode);  //must be full htmlcode, with <style amp-custom> tag and the <body> content
-	echo $tmp->result();		
+    $tmp->process($htmlcode);  //must be full htmlcode, with <style amp-custom> tag and the <body> content
+    echo $tmp->result();		
 	
 HOW TO VIEW REPORT:-
-	$tmp = new AmpRemoveUnusedCss(1);  //set 1 or TRUE to get full report, or void or 0 or FALSE to get simple report
-	$tmp->process($htmlcode);  
+    $tmp = new AmpRemoveUnusedCss(1);  //set 1 or TRUE to get full report, or void or 0 or FALSE to get simple report
+    $tmp->process($htmlcode);  
     echo $tmp->report(); 
 	
 ONLY MINIFY CSS (can be used in no-AMP pages, too)
-	You also can just only minify CSS by calling (it removes useless white spaces, but it does not remove unused CSS rules):
-	$tmp = new AmpRemoveUnusedCss();
-	$css_minified = $tmp->minify($css);	
+    You also can just only minify CSS by calling (it removes useless white spaces, but it does not remove unused CSS rules):
+    $tmp = new AmpRemoveUnusedCss();
+    $css_minified = $tmp->minify($css);	
 
 
  **************************************************************/
@@ -67,24 +67,7 @@ class AmpRemoveUnusedCss
         $this->escapechars = str_split("?*:.()[]-");
     }
 
-    /*
-    private function tokenize($selector, $data_from_regex_css)
-    {
-        if ($selector == "tags.attr" || $selector == "attr") {
-            $ids = $data_from_regex_css[0]; //array();
-            return $ids;
-        }
-        if ($selector == "tags.cls")
-            $ids = array_unique($data_from_regex_css[0]);
-        else
-            $ids = array_unique($data_from_regex_css[1]);
-        foreach ($ids as $i => $id)
-            $ids[$selector][$i] = $this->selectors[$selector]['prefix'] . $id . (isset($this->selectors[$selector]["suffix"]) ? $this->selectors[$selector]["suffix"] : "");
-        return $ids;
-    }*/
-
-
-
+    
     public function process($html, $newline = "\n")
     {
         $bodypos = strpos($html, "<body");
@@ -115,9 +98,6 @@ class AmpRemoveUnusedCss
 
         if (isset($this->stats['source_minified_length']))
             $r .= $tag . "After minify length = " . $this->stats['source_minified_length'] . "\n";
-
-        //if (isset($this->stats['src_rules_to_remove']))
-        //$r .= $tag . "Removed rules = " . implode("<br>", array_keys($this->rules_to_remove)) . "\n";
 
         if (isset($this->stats['num_rules_found']))
             $r .= $tag . "Total rules in source = " . $this->stats['num_rules_found'] . "\n";
